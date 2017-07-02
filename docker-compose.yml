@@ -1,0 +1,43 @@
+version: '2'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.4.0
+    container_name: elasticsearch
+    environment:
+      - cluster.name=es-docker-cluster
+      - xpack.monitoring.enabled=false
+      - xpack.security.enabled=false
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    mem_limit: 1g
+    volumes:
+      - ./data/elasticsearch:/usr/share/elasticsearch/data
+
+      # If you want to use a custom configuration file, simply uncomment
+      # the below and place a file named elasticsearch.yml in this directory.
+      #- ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - 9200:9200
+  kibana:
+    image: docker.elastic.co/kibana/kibana:5.4.0
+    container_name: kibana
+    environment:
+      - SERVER_HOST=0.0.0.0
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=changethis
+      - ELASTICSEARCH_PASSWORD=changethis
+      - XPACK_SECURITY_ENABLED=false
+      - XPACK_MONITORING_ENABLED=false
+    volumes:
+      - ./data/kibana/data:/usr/share/kibana/data
+      - ./data/kibana/optimize:/usr/share/kibana/optimize
+    ports:
+        - 5601:5601
+    links:
+        - elasticsearch
+    depends_on:
+        - elasticsearch
