@@ -1,5 +1,8 @@
-Adding document with auto generated ID:
+# Adding documents
 
+## Adding document with auto generated ID:
+
+```
 POST /product/default
 {
   "name": "Processing Events with Logstash",
@@ -8,10 +11,11 @@ POST /product/default
     "lastName": "Andersen"
   }
 }
+```
 
+## Adding document by ID:
 
-Adding document by ID:
-
+```
 PUT /product/default/1
 {
   "name": "Complete Guide to Elasticsearch",
@@ -20,3 +24,4 @@ PUT /product/default/1
     "lastName": "Andersen"
   }
 }
+```

@@ -1,7 +1,13 @@
-#1
+# Importing test data
 
+## Navigating to bulk file directory
+
+```
 cd /path/to/data/file/directory
+```
 
-#2
+## Importing test data with cURL
 
-curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/product/default/_bulk?pretty' --data-binary "@test-data.json"
+```
+curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/product/default/_bulk?pretty' --data-binary "@products-bulk.json"
+```

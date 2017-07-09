@@ -1,19 +1,31 @@
-#1
+# Exploring the cluster
 
+## Checking the cluster health
+
+```
 GET /_cat/health?v
+```
 
-#2
+## Listing the cluster's nodes
 
+```
 GET /_cat/nodes?v
+```
 
-#3
+## Listing the cluster's indices
 
+```
 GET /_cat/indices?v
+```
 
-#4
+## Checking the shard allocation
 
+```
 GET /_cat/allocation?v
+```
 
-#5
+## Checking which nodes contain which shards
 
+```
 GET /_cat/shards?v
+```

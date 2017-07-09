@@ -1,9 +1,14 @@
-#1
+# Upserts
 
+## Deleting the existing document
+
+```
 DELETE /product/default/1
+```
 
-#2
+## Inserting or updating a document (upsert)
 
+```
 POST /product/default/1/_update
 {
     "script" : "ctx._source.price += 5",
@@ -11,7 +16,10 @@ POST /product/default/1/_update
         "price" : 100
     }
 }
+```
 
-#3
+## Retrieving the document
 
+```
 GET /product/default/1
+```
