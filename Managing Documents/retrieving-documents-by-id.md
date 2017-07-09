@@ -1,0 +1,1 @@
+GET /product/default/1
