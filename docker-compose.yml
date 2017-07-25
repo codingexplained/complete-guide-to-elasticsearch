@@ -8,9 +8,12 @@ services:
       - node.name=es-docker-node
       - node.master=true
       - node.data=true
+      - node.ml=false
       - network.host=0.0.0.0
       - xpack.monitoring.enabled=false
       - xpack.security.enabled=false
+      - xpack.ml.enabled=false
+      - xpack.watcher.enabled=false
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
@@ -36,6 +39,8 @@ services:
       - ELASTICSEARCH_PASSWORD=changethis
       - XPACK_SECURITY_ENABLED=false
       - XPACK_MONITORING_ENABLED=false
+      - XPACK_REPORTING_ENABLED=false
+      - XPACK_ML_ENABLED=false
     volumes:
       - ./data/kibana/data:/usr/share/kibana/data
       - ./data/kibana/optimize:/usr/share/kibana/optimize
