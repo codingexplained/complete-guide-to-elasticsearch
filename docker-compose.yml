@@ -2,7 +2,7 @@ version: '2'
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:5.4.0
-    container_name: elasticsearch_test
+    container_name: elasticsearch_docker
     environment:
       - cluster.name=es-docker-cluster
       - node.name=es-docker-node
@@ -31,7 +31,7 @@ services:
       - 9200:9200
   kibana:
     image: docker.elastic.co/kibana/kibana:5.4.0
-    container_name: kibana_test
+    container_name: kibana_docker
     environment:
       - SERVER_HOST=0.0.0.0
       - ELASTICSEARCH_URL=http://elasticsearch:9200
