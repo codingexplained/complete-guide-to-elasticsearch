@@ -51,7 +51,7 @@ GET /product/default/_search
 {
   "query": {
     "terms": {
-      "name.keyword": [ "Tomato", "Paste" ]
+      "name": [ "Tomato", "Paste" ]
     }
   }
 }
