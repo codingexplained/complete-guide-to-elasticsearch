@@ -26,7 +26,7 @@ GET /order/default/_search
   "aggs": {
     "orders_without_status": {
       "missing": {
-        "field": "status"
+        "field": "status.keyword"
       }
     }
   }
@@ -42,7 +42,7 @@ GET /order/default/_search
   "aggs": {
     "orders_without_status": {
       "missing": {
-        "field": "status"
+        "field": "status.keyword"
       },
       "aggs": {
         "missing_sum": {
