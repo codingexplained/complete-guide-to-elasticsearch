@@ -5,7 +5,7 @@
 ```
 POST _analyze
 {
-  "tokenizer" : "standard",
+  "tokenizer": "standard",
   "text": "I'm in the mood for drinking semi-dry red wine!"
 }
 ```
@@ -15,7 +15,7 @@ POST _analyze
 ```
 POST _analyze
 {
-  "filter" : [ "lowercase" ],
+  "filter": [ "lowercase" ],
   "text": "I'm in the mood for drinking semi-dry red wine!"
 }
 ```
