@@ -6,7 +6,7 @@
 PUT /department
 {
   "mappings": {
-    "default": {
+    "_doc": {
       "properties": {
         "name": {
           "type": "text"
@@ -23,7 +23,7 @@ PUT /department
 ## Adding test documents
 
 ```
-POST /department/default/1
+POST /department/_doc/1
 {
   "name": "Development",
   "employees": [
@@ -62,7 +62,7 @@ POST /department/default/1
 ```
 
 ```
-POST /department/default/2
+POST /department/_doc/2
 {
   "name": "HR & Marketing",
   "employees": [
@@ -133,7 +133,7 @@ POST /department/default/2
 ## Querying nested fields
 
 ```
-GET /department/default/_search
+GET /department/_search
 {
   "query": {
     "nested": {
