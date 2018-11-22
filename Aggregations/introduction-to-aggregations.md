@@ -6,7 +6,7 @@
 PUT /order
 {
   "mappings": {
-    "default": {
+    "_doc": {
       "properties": {
         "purchased_at": {
           "type": "date"
@@ -54,5 +54,5 @@ PUT /order
 ## Populating the `order` index with test data
 
 ```
-curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/order/default/_bulk?pretty' --data-binary "@orders-bulk.json"
+curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/order/_doc/_bulk?pretty' --data-binary "@orders-bulk.json"
 ```

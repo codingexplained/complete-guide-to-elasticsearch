@@ -3,7 +3,7 @@
 ## Adding query clauses to the `must` key
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -29,7 +29,7 @@ GET /recipe/default/_search
 ## Moving the `range` query to the `filter` key
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -57,7 +57,7 @@ GET /recipe/default/_search
 ## Adding a query clause to the `must_not` key
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -92,7 +92,7 @@ GET /recipe/default/_search
 ## Adding a query clause to the `should` key
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -134,7 +134,7 @@ GET /recipe/default/_search
 ## The behavior of `should` query clauses depends
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -158,7 +158,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {

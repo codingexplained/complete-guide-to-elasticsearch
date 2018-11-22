@@ -33,7 +33,7 @@ PUT /stemming_test
     }
   },
   "mappings": {
-    "default": {
+    "_doc": {
       "properties": {
         "description": {
           "type": "text",
@@ -48,7 +48,7 @@ PUT /stemming_test
 ## Adding a test document
 
 ```
-POST /stemming_test/default/1
+POST /stemming_test/_doc/1
 {
   "description": "I love working for my firm!"
 }
@@ -57,7 +57,7 @@ POST /stemming_test/default/1
 ## Matching the document with the base word (`work`)
 
 ```
-GET /stemming_test/default/_search
+GET /stemming_test/_doc/_search
 {
   "query": {
     "match": {
@@ -70,7 +70,7 @@ GET /stemming_test/default/_search
 ## The query is stemmed, so the document still matches
 
 ```
-GET /stemming_test/default/_search
+GET /stemming_test/_doc/_search
 {
   "query": {
     "match": {
@@ -83,7 +83,7 @@ GET /stemming_test/default/_search
 ## Synonyms and stemmed words are still highlighted
 
 ```
-GET /stemming_test/default/_search
+GET /stemming_test/_doc/_search
 {
   "query": {
     "match": {

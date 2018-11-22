@@ -3,13 +3,13 @@
 ## Deleting document by ID
 
 ```
-DELETE /product/default/1
+DELETE /product/_doc/1
 ```
 
 ## Adding test documents
 
 ```
-POST /product/default
+POST /product/_doc
 {
   "name": "Processing Events with Logstash",
   "category": "course"
@@ -17,7 +17,7 @@ POST /product/default
 ```
 
 ```
-POST /product/default
+POST /product/_doc
 {
   "name": "The Art of Scalability",
   "category": "book"

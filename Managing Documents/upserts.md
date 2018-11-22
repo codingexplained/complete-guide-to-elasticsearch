@@ -3,13 +3,13 @@
 ## Deleting the existing document
 
 ```
-DELETE /product/default/1
+DELETE /product/_doc/1
 ```
 
 ## Inserting or updating a document (upsert)
 
 ```
-POST /product/default/1/_update
+POST /product/_doc/1/_update
 {
     "script" : "ctx._source.price += 5",
     "upsert" : {
@@ -21,5 +21,5 @@ POST /product/default/1/_update
 ## Retrieving the document
 
 ```
-GET /product/default/1
+GET /product/_doc/1
 ```

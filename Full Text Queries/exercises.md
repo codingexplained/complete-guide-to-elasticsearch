@@ -1,7 +1,7 @@
 # Exercises
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match": {
@@ -12,7 +12,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match_phrase": {
@@ -23,7 +23,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match_phrase": {
@@ -34,7 +34,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "multi_match": {

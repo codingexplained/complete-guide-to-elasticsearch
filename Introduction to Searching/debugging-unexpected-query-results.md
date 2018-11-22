@@ -1,7 +1,7 @@
 # Debugging unexpected query results
 
 ```
-GET /product/default/1/_explain
+GET /product/_doc/1/_explain
 {
   "query": {
     "term": {

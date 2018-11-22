@@ -3,7 +3,7 @@
 ## Adding a `filter` clause to the `bool` query
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {

@@ -3,7 +3,7 @@
 ## Adding mapping for `discount` field
 
 ```
-PUT /product/default/_mapping
+PUT /product/_doc/_mapping
 {
   "properties": {
     "discount": {
@@ -16,5 +16,5 @@ PUT /product/default/_mapping
 ## Retrieving mapping
 
 ```
-GET /product/default/_mapping
+GET /product/_doc/_mapping
 ```

@@ -1,7 +1,7 @@
 # Searching multiple fields
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "multi_match": {

@@ -1,7 +1,7 @@
 # Understanding relevance scores
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "explain": true,
   "query": {

@@ -25,7 +25,7 @@ PUT /synonyms
     }
   },
   "mappings": {
-    "default": {
+    "_doc": {
       "properties": {
         "description": {
           "type": "text",

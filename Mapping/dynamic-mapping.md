@@ -3,5 +3,5 @@
 ## Retrieving mapping
 
 ```
-GET /product/default/_mapping
+GET /product/_doc/_mapping
 ```

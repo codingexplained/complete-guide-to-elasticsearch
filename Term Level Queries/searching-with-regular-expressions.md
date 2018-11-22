@@ -1,7 +1,7 @@
 # Searching with regular expressions
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "regexp": {

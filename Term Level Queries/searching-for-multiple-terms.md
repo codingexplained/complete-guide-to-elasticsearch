@@ -1,7 +1,7 @@
 # Searching for multiple terms
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "terms": {

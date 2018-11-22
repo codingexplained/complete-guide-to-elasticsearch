@@ -3,7 +3,7 @@
 ## The two queries below are equivalent
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match": {
@@ -14,7 +14,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {
@@ -38,7 +38,7 @@ GET /recipe/default/_search
 ## The two queries below are equivalent
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match": {
@@ -52,7 +52,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "bool": {

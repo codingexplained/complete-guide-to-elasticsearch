@@ -3,7 +3,7 @@
 ## Updating `price` field and adding `tags` field
 
 ```
-POST /product/default/1/_update
+POST /product/_doc/1/_update
 {
   "doc": { "price": 95, "tags": [ "Elasticsearch" ] }
 }
@@ -12,5 +12,5 @@ POST /product/default/1/_update
 ## Retrieving the updated document
 
 ```
-GET /product/default/1
+GET /product/_doc/1
 ```

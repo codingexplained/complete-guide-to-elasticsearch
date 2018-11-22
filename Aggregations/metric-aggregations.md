@@ -3,7 +3,7 @@
 ## Calculating statistics with `sum`, `avg`, `min`, and `max` aggregations
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -34,7 +34,7 @@ GET /order/default/_search
 ## Retrieving the number of distinct values
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -50,7 +50,7 @@ GET /order/default/_search
 ## Retrieving the number of values
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -66,7 +66,7 @@ GET /order/default/_search
 ## Using `stats` aggregation for common statistics
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {

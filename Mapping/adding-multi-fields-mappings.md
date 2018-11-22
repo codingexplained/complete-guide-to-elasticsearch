@@ -3,7 +3,7 @@
 ## Adding mappings
 
 ```
-PUT /product/default/_mapping
+PUT /product/_doc/_mapping
 {
   "properties": {
     "description": {
@@ -32,5 +32,5 @@ PUT /product/default/_mapping
 ## Retrieving mapping
 
 ```
-GET /product/default/_mapping
+GET /product/_doc/_mapping
 ```

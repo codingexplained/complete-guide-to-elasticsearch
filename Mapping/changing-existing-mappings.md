@@ -12,7 +12,7 @@ DELETE /product
 PUT /product
 {
   "mappings": {
-    "default": {
+    "_doc": {
       "dynamic": false,
       "properties": {
         "in_stock": {

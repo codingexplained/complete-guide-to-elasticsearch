@@ -30,7 +30,7 @@ PUT /synonyms
     }
   },
   "mappings": {
-    "default": {
+    "_doc": {
       "properties": {
         "description": {
           "type": "text",
@@ -79,7 +79,7 @@ POST /synonyms/_analyze
 ## Adding a test document
 
 ```
-POST /synonyms/default
+POST /synonyms/_doc
 {
   "description": "Elasticsearch is awesome, but can also seem weird sometimes."
 }
@@ -88,7 +88,7 @@ POST /synonyms/default
 ## Searching the index for synonyms
 
 ```
-GET /synonyms/default/_search
+GET /synonyms/_doc/_search
 {
   "query": {
     "match": {
@@ -99,7 +99,7 @@ GET /synonyms/default/_search
 ```
 
 ```
-GET /synonyms/default/_search
+GET /synonyms/_doc/_search
 {
   "query": {
     "match": {

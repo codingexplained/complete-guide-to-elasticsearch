@@ -3,14 +3,14 @@
 ## Adding test documents
 
 ```
-POST /order/default/1001
+POST /order/_doc/1001
 {
   "total_amount": 100
 }
 ```
 
 ```
-POST /order/default/1002
+POST /order/_doc/1002
 {
   "total_amount": 200,
   "status": null
@@ -20,7 +20,7 @@ POST /order/default/1002
 ## Aggregating documents with missing field value
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -36,7 +36,7 @@ GET /order/default/_search
 ## Combining `missing` aggregation with other aggregations
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -59,9 +59,9 @@ GET /order/default/_search
 ## Deleting test documents
 
 ```
-DELETE /order/default/1001
+DELETE /order/_doc/1001
 ```
 
 ```
-DELETE /order/default/1002
+DELETE /order/_doc/1002
 ```

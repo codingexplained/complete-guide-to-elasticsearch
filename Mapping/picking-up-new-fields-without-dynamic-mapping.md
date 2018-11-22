@@ -3,7 +3,7 @@
 ## Adding test document
 
 ```
-POST /product/default/2000
+POST /product/_doc/2000
 {
   "description": "Test",
   "discount": 20
@@ -13,7 +13,7 @@ POST /product/default/2000
 ## Adding mapping for `discount` field
 
 ```
-PUT /product/default/_mapping
+PUT /product/_doc/_mapping
 {
   "properties": {
     "discount": {
@@ -26,7 +26,7 @@ PUT /product/default/_mapping
 ## Querying the `description` field
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {
@@ -39,7 +39,7 @@ GET /product/default/_search
 ## Querying the `discount` field
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "term": {
@@ -58,5 +58,5 @@ POST /product/_update_by_query?conflicts=proceed
 ## Deleting the test document
 
 ```
-DELETE /product/default/2000
+DELETE /product/_doc/2000
 ```

@@ -3,7 +3,7 @@
 ## `range` aggregation
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -31,7 +31,7 @@ GET /order/default/_search
 ## `date_range` aggregation
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -57,7 +57,7 @@ GET /order/default/_search
 ## Specifying the date format
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -84,7 +84,7 @@ GET /order/default/_search
 ## Enabling keys for the buckets
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -112,7 +112,7 @@ GET /order/default/_search
 ## Defining the bucket keys
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {
@@ -142,7 +142,7 @@ GET /order/default/_search
 ## Adding a sub-aggregation
 
 ```
-GET /order/default/_search
+GET /order/_doc/_search
 {
   "size": 0,
   "aggs": {

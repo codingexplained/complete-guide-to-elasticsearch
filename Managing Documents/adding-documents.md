@@ -3,7 +3,7 @@
 ## Adding document with auto generated ID:
 
 ```
-POST /product/default
+POST /product/_doc
 {
   "name": "Processing Events with Logstash",
   "instructor": {
@@ -16,7 +16,7 @@ POST /product/default
 ## Adding document by ID:
 
 ```
-PUT /product/default/1
+PUT /product/_doc/1
 {
   "name": "Complete Guide to Elasticsearch",
   "instructor": {

@@ -3,7 +3,7 @@
 ## The order of terms matters
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match_phrase": {
@@ -14,7 +14,7 @@ GET /recipe/default/_search
 ```
 
 ```
-GET /recipe/default/_search
+GET /recipe/_doc/_search
 {
   "query": {
     "match_phrase": {

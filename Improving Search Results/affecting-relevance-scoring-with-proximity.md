@@ -3,7 +3,7 @@
 ## A simple `match` query within a `bool` query
 
 ```
-GET /proximity/default/_search
+GET /proximity/_doc/_search
 {
   "query": {
     "bool": {
@@ -24,7 +24,7 @@ GET /proximity/default/_search
 ## Boosting relevance based on proximity
 
 ```
-GET /proximity/default/_search
+GET /proximity/_doc/_search
 {
   "query": {
     "bool": {
@@ -54,7 +54,7 @@ GET /proximity/default/_search
 ## Adding the `slop` parameter
 
 ```
-GET /proximity/default/_search
+GET /proximity/_doc/_search
 {
   "query": {
     "bool": {

@@ -3,7 +3,7 @@
 ## Searching with `fuzziness` set to `auto`
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {
@@ -17,7 +17,7 @@ GET /product/default/_search
 ```
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {
@@ -33,7 +33,7 @@ GET /product/default/_search
 ## Fuzziness is per term (and specifying an integer)
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {
@@ -50,7 +50,7 @@ GET /product/default/_search
 ## Switching letters around with transpositions
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {
@@ -66,7 +66,7 @@ GET /product/default/_search
 ## Disabling transpositions
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {

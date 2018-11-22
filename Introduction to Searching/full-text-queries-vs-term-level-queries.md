@@ -3,7 +3,7 @@
 ## Term level queries are not analyzed
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "term": {
@@ -14,7 +14,7 @@ GET /product/default/_search
 ```
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "term": {
@@ -27,7 +27,7 @@ GET /product/default/_search
 ## Full-text queries are analyzed
 
 ```
-GET /product/default/_search
+GET /product/_doc/_search
 {
   "query": {
     "match": {

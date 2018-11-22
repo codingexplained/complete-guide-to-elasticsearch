@@ -3,7 +3,7 @@
 ## Updating a document with a script
 
 ```
-POST /product/default/1/_update
+POST /product/_doc/1/_update
 {
   "script": "ctx._source.price += 10"
 }
@@ -12,5 +12,5 @@ POST /product/default/1/_update
 ## Retrieving the updated document
 
 ```
-GET /product/default/1
+GET /product/_doc/1
 ```
