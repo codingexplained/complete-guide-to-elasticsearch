@@ -3,7 +3,7 @@
 ## Adding departments
 
 ```
-PUT /department/_doc/1
+PUT /department/default/1
 {
   "name": "Development",
   "join_field": "department"
@@ -11,7 +11,7 @@ PUT /department/_doc/1
 ```
 
 ```
-PUT /department/_doc/2
+PUT /department/default/2
 {
   "name": "Marketing",
   "join_field": "department"
@@ -21,7 +21,7 @@ PUT /department/_doc/2
 ## Adding employees for departments
 
 ```
-PUT /department/_doc/3?routing=1
+PUT /department/default/3?routing=1
 {
   "name": "Bo Andersen",
   "age": 28,
@@ -34,7 +34,7 @@ PUT /department/_doc/3?routing=1
 ```
 
 ```
-PUT /department/_doc/4?routing=2
+PUT /department/default/4?routing=2
 {
   "name": "John Doe",
   "age": 44,
@@ -47,7 +47,7 @@ PUT /department/_doc/4?routing=2
 ```
 
 ```
-PUT /department/_doc/5?routing=1
+PUT /department/default/5?routing=1
 {
   "name": "James Evans",
   "age": 32,
@@ -60,7 +60,7 @@ PUT /department/_doc/5?routing=1
 ```
 
 ```
-PUT /department/_doc/6?routing=1
+PUT /department/default/6?routing=1
 {
   "name": "Daniel Harris",
   "age": 52,
@@ -73,7 +73,7 @@ PUT /department/_doc/6?routing=1
 ```
 
 ```
-PUT /department/_doc/7?routing=2
+PUT /department/default/7?routing=2
 {
   "name": "Jane Park",
   "age": 23,
@@ -86,7 +86,7 @@ PUT /department/_doc/7?routing=2
 ```
 
 ```
-PUT /department/_doc/8?routing=1
+PUT /department/default/8?routing=1
 {
   "name": "Christina Parker",
   "age": 29,

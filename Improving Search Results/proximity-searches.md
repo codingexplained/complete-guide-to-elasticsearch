@@ -3,35 +3,35 @@
 ## Adding test documents
 
 ```
-PUT /proximity/_doc/1
+PUT /proximity/default/1
 {
   "title": "Spicy Sauce"
 }
 ```
 
 ```
-PUT /proximity/_doc/2
+PUT /proximity/default/2
 {
   "title": "Spicy Tomato Sauce"
 }
 ```
 
 ```
-PUT /proximity/_doc/3
+PUT /proximity/default/3
 {
   "title": "Spicy Tomato and Garlic Sauce"
 }
 ```
 
 ```
-PUT /proximity/_doc/4
+PUT /proximity/default/4
 {
   "title": "Tomato Sauce (spicy)"
 }
 ```
 
 ```
-PUT /proximity/_doc/5
+PUT /proximity/default/5
 {
   "title": "Spicy and very delicious Tomato Sauce"
 }
@@ -40,7 +40,7 @@ PUT /proximity/_doc/5
 ## Adding the `slop` parameter to a `match_phrase` query
 
 ```
-GET /proximity/_doc/_search
+GET /proximity/default/_search
 {
   "query": {
     "match_phrase": {
@@ -54,7 +54,7 @@ GET /proximity/_doc/_search
 ```
 
 ```
-GET /proximity/_doc/_search
+GET /proximity/default/_search
 {
   "query": {
     "match_phrase": {

@@ -88,7 +88,7 @@ POST /synonyms/_doc
 ## Searching the index for synonyms
 
 ```
-GET /synonyms/_doc/_search
+GET /synonyms/default/_search
 {
   "query": {
     "match": {
@@ -99,7 +99,7 @@ GET /synonyms/_doc/_search
 ```
 
 ```
-GET /synonyms/_doc/_search
+GET /synonyms/default/_search
 {
   "query": {
     "match": {

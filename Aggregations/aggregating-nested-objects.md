@@ -1,7 +1,7 @@
 # Aggregating nested objects
 
 ```
-GET /department/_doc/_search
+GET /department/default/_search
 {
   "size": 0,
   "aggs": {
@@ -15,7 +15,7 @@ GET /department/_doc/_search
 ```
 
 ```
-GET /department/_doc/_search
+GET /department/default/_search
 {
   "size": 0,
   "aggs": {

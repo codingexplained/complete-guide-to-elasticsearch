@@ -3,7 +3,7 @@
 ## Adding test data
 
 ```
-PUT /users/_doc/1
+PUT /users/default/1
 {
   "name": "John Roberts",
   "following" : [2, 3]
@@ -11,7 +11,7 @@ PUT /users/_doc/1
 ```
 
 ```
-PUT /users/_doc/2
+PUT /users/default/2
 {
   "name": "Elizabeth Ross",
   "following" : []
@@ -19,7 +19,7 @@ PUT /users/_doc/2
 ```
 
 ```
-PUT /users/_doc/3
+PUT /users/default/3
 {
   "name": "Jeremy Brooks",
   "following" : [1, 2]
@@ -27,7 +27,7 @@ PUT /users/_doc/3
 ```
 
 ```
-PUT /users/_doc/4
+PUT /users/default/4
 {
   "name": "Diana Moore",
   "following" : [3, 1]
@@ -35,7 +35,7 @@ PUT /users/_doc/4
 ```
 
 ```
-PUT /stories/_doc/1
+PUT /stories/default/1
 {
   "user": 3,
   "content": "Wow look, a penguin!"
@@ -43,7 +43,7 @@ PUT /stories/_doc/1
 ```
 
 ```
-PUT /stories/_doc/2
+PUT /stories/default/2
 {
   "user": 1,
   "content": "Just another day at the office... #coffee"
@@ -51,7 +51,7 @@ PUT /stories/_doc/2
 ```
 
 ```
-PUT /stories/_doc/3
+PUT /stories/default/3
 {
   "user": 1,
   "content": "Making search great again! #elasticsearch #elk"
@@ -59,7 +59,7 @@ PUT /stories/_doc/3
 ```
 
 ```
-PUT /stories/_doc/4
+PUT /stories/default/4
 {
   "user": 4,
   "content": "Had a blast today! #rollercoaster #amusementpark"
@@ -67,7 +67,7 @@ PUT /stories/_doc/4
 ```
 
 ```
-PUT /stories/_doc/5
+PUT /stories/default/5
 {
   "user": 4,
   "content": "Yay, I just got hired as an Elasticsearch consultant - so excited!"
@@ -75,7 +75,7 @@ PUT /stories/_doc/5
 ```
 
 ```
-PUT /stories/_doc/6
+PUT /stories/default/6
 {
   "user": 2,
   "content": "Chilling at the beach @ Greece #vacation #goodtimes"

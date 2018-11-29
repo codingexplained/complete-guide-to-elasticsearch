@@ -23,7 +23,7 @@ PUT /department
 ## Adding test documents
 
 ```
-POST /department/_doc/1
+POST /department/default/1
 {
   "name": "Development",
   "employees": [
@@ -62,7 +62,7 @@ POST /department/_doc/1
 ```
 
 ```
-POST /department/_doc/2
+POST /department/default/2
 {
   "name": "HR & Marketing",
   "employees": [

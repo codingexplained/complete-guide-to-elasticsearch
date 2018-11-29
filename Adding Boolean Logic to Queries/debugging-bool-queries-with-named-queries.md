@@ -1,7 +1,7 @@
 # Debugging `bool` queries with named queries
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/default/_search
 {
     "query": {
         "bool": {

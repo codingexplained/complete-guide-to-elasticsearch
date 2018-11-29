@@ -24,7 +24,7 @@ PUT /company
 ## Adding a company
 
 ```
-PUT /company/_doc/1
+PUT /company/default/1
 {
   "name": "My Company Inc.",
   "join_field": "company"
@@ -34,7 +34,7 @@ PUT /company/_doc/1
 ## Adding a department
 
 ```
-PUT /company/_doc/2?routing=1
+PUT /company/default/2?routing=1
 {
   "name": "Development",
   "join_field": {
@@ -47,7 +47,7 @@ PUT /company/_doc/2?routing=1
 ## Adding an employee
 
 ```
-PUT /company/_doc/3?routing=1
+PUT /company/default/3?routing=1
 {
   "name": "Bo Andersen",
   "join_field": {
@@ -59,7 +59,7 @@ PUT /company/_doc/3?routing=1
 
 ## Adding some more test data
 ```
-PUT /company/_doc/4
+PUT /company/default/4
 {
   "name": "Another Company, Inc.",
   "join_field": "company"
@@ -67,7 +67,7 @@ PUT /company/_doc/4
 ```
 
 ```
-PUT /company/_doc/5?routing=4
+PUT /company/default/5?routing=4
 {
   "name": "Marketing",
   "join_field": {
@@ -78,7 +78,7 @@ PUT /company/_doc/5?routing=4
 ```
 
 ```
-PUT /company/_doc/6?routing=4
+PUT /company/default/6?routing=4
 {
   "name": "John Doe",
   "join_field": {

@@ -3,7 +3,7 @@
 ## Replacing an existing document
 
 ```
-PUT /product/_doc/1
+PUT /product/default/1
 {
   "name": "Complete Guide to Elasticsearch",
   "price": 195,
@@ -17,5 +17,5 @@ PUT /product/_doc/1
 ## Retrieving the replaced document
 
 ```
-GET /product/_doc/1
+GET /product/default/1
 ```

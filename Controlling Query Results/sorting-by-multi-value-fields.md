@@ -3,7 +3,7 @@
 ## Sorting by the average rating (descending)
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/default/_search
 {
   "_source": "ratings",
   "query": {

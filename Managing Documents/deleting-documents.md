@@ -3,7 +3,7 @@
 ## Deleting document by ID
 
 ```
-DELETE /product/_doc/1
+DELETE /product/default/1
 ```
 
 ## Adding test documents

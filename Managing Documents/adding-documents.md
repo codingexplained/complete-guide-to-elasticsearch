@@ -16,7 +16,7 @@ POST /product/_doc
 ## Adding document by ID:
 
 ```
-PUT /product/_doc/1
+PUT /product/default/1
 {
   "name": "Complete Guide to Elasticsearch",
   "instructor": {

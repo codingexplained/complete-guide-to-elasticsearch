@@ -3,7 +3,7 @@
 ## Placing documents into buckets based on criteria
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/default/_search
 {
   "size": 0,
   "aggs": {
@@ -30,7 +30,7 @@ GET /recipe/_doc/_search
 ## Calculate average ratings for buckets
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/default/_search
 {
   "size": 0,
   "aggs": {

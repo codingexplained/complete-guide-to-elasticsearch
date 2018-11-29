@@ -3,7 +3,7 @@
 ## Creating a bucket for each `status` value
 
 ```
-GET /order/_doc/_search
+GET /order/default/_search
 {
   "size": 0,
   "aggs": {
@@ -19,7 +19,7 @@ GET /order/_doc/_search
 ## Including `20` terms instead of the default `10`
 
 ```
-GET /order/_doc/_search
+GET /order/default/_search
 {
   "size": 0,
   "aggs": {
@@ -36,7 +36,7 @@ GET /order/_doc/_search
 ## Aggregating documents with missing field (or `NULL`)
 
 ```
-GET /order/_doc/_search
+GET /order/default/_search
 {
   "size": 0,
   "aggs": {
@@ -54,7 +54,7 @@ GET /order/_doc/_search
 ## Changing the minimum document count for a bucket to be created
 
 ```
-GET /order/_doc/_search
+GET /order/default/_search
 {
   "size": 0,
   "aggs": {
@@ -73,7 +73,7 @@ GET /order/_doc/_search
 ## Ordering the buckets
 
 ```
-GET /order/_doc/_search
+GET /order/default/_search
 {
   "size": 0,
   "aggs": {
