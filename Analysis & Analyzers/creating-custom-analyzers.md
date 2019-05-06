@@ -25,7 +25,6 @@ PUT /analyzers_test
             "html_strip"
           ],
           "filter": [
-            "standard",
             "lowercase",
             "trim",
             "my_stemmer"
