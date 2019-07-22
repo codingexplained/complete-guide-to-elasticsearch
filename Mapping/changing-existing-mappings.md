@@ -12,21 +12,19 @@ DELETE /product
 PUT /product
 {
   "mappings": {
-    "_doc": {
-      "dynamic": false,
-      "properties": {
-        "in_stock": {
-          "type": "integer"
-        },
-        "is_active": {
-          "type": "boolean"
-        },
-        "price": {
-          "type": "integer"
-        },
-        "sold": {
-          "type": "long"
-        }
+    "dynamic": false,
+    "properties": {
+      "in_stock": {
+        "type": "integer"
+      },
+      "is_active": {
+        "type": "boolean"
+      },
+      "price": {
+        "type": "integer"
+      },
+      "sold": {
+        "type": "long"
       }
     }
   }
