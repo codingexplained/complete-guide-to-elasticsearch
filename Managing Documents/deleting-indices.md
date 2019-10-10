@@ -1,5 +1,0 @@
-# Deleting indices
-
-```
-DELETE /product
-```

@@ -1,30 +1,40 @@
 # Batch processing
 
-## Adding documents
+## Indexing documents
 
 ```
-POST /product/_bulk
-{ "index": { "_id": "100" } }
-{ "price": 100 }
-{ "index": { "_id": "101" } }
-{ "price": 101 }
+POST /_bulk
+{ "index": { "_index": "products", "_id": 200 } }
+{ "name": "Espresso Machine", "price": 199, "in_stock": 5 }
+{ "create": { "_index": "products", "_id": 201 } }
+{ "name": "Milk Frother", "price": 149, "in_stock": 14 }
 ```
 
 ## Updating and deleting documents
 
 ```
-POST /product/_bulk
-{ "update": { "_id": "100" } }
-{ "doc": { "price": 1000 } }
-{ "delete": { "_id": "101" } }
+POST /_bulk
+{ "update": { "_index": "products", "_id": 201 } }
+{ "doc": { "price": 129 } }
+{ "delete": { "_index": "products", "_id": 200 } }
 ```
 
-## Retrieving affected documents
+## Specifying the index name in the request path
 
 ```
-GET /product/_doc/100
+POST /products/_bulk
+{ "update": { "_id": 201 } }
+{ "doc": { "price": 129 } }
+{ "delete": { "_id": 200 } }
 ```
 
+## Retrieving all documents
+
 ```
-GET /product/_doc/101
+GET /products/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
 ```

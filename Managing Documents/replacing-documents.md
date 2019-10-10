@@ -1,21 +1,10 @@
 # Replacing documents
 
-## Replacing an existing document
-
 ```
-PUT /product/_doc/1
+PUT /products/_doc/100
 {
-  "name": "Complete Guide to Elasticsearch",
-  "price": 195,
-  "instructor": {
-    "firstName": "Bo",
-    "lastName": "Andersen"
-  }
+  "name": "Toaster",
+  "price": 79,
+  "in_stock": 4
 }
-```
-
-## Retrieving the replaced document
-
-```
-GET /product/_doc/1
 ```

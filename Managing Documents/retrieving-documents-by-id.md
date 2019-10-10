@@ -1,5 +1,5 @@
 # Retrieving documents by ID
 
 ```
-GET /product/_doc/1
+GET /products/_doc/100
 ```

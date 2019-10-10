@@ -1,16 +1,25 @@
 # Updating documents
 
-## Updating `price` field and adding `tags` field
+## Updating an existing field
 
 ```
-POST /product/_doc/1/_update
+POST /products/_update/100
 {
-  "doc": { "price": 95, "tags": [ "Elasticsearch" ] }
+  "doc": {
+    "in_stock": 3
+  }
 }
 ```
 
-## Retrieving the updated document
+## Adding a new field
+
+_Yes, the syntax is the same as the above. ;-)_
 
 ```
-GET /product/_doc/1
+POST /products/_update/100
+{
+  "doc": {
+    "tags": ["electronics"]
+  }
+}
 ```
