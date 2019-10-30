@@ -6,14 +6,12 @@
 PUT /company
 {
   "mappings": {
-    "_doc": {
-      "properties": {
-        "join_field": { 
-          "type": "join",
-          "relations": {
-            "company": ["department", "supplier"],
-            "department": "employee"
-          }
+    "properties": {
+      "join_field": { 
+        "type": "join",
+        "relations": {
+          "company": ["department", "supplier"],
+          "department": "employee"
         }
       }
     }

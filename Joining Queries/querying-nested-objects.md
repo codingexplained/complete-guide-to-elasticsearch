@@ -5,15 +5,13 @@
 ```
 PUT /department
 {
-  "mappings": {
-    "_doc": {
-      "properties": {
-        "name": {
-          "type": "text"
-        },
-        "employees": {
-          "type": "nested"
-        }
+  "mappings": {  
+    "properties": {
+      "name": {
+        "type": "text"
+      },
+      "employees": {
+        "type": "nested"
       }
     }
   }

@@ -30,12 +30,10 @@ PUT /synonyms
     }
   },
   "mappings": {
-    "_doc": {
-      "properties": {
-        "description": {
-          "type": "text",
-          "analyzer": "my_analyzer"
-        }
+    "properties": {
+      "description": {
+        "type": "text",
+        "analyzer": "my_analyzer"
       }
     }
   }
