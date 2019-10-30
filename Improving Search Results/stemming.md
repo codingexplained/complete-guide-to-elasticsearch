@@ -46,7 +46,7 @@ PUT /stemming_test
 ## Adding a test document
 
 ```
-POST /stemming_test/_doc/1
+PUT /stemming_test/_doc/1
 {
   "description": "I love working for my firm!"
 }
