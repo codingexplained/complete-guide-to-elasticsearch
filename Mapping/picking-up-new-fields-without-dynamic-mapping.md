@@ -3,7 +3,7 @@
 ## Adding test document
 
 ```
-POST /product/_doc/2000
+PUT /product/_doc/2000
 {
   "description": "Test",
   "discount": 20
@@ -13,7 +13,7 @@ POST /product/_doc/2000
 ## Adding mapping for `discount` field
 
 ```
-PUT /product/_doc/_mapping
+PUT /product/_mapping
 {
   "properties": {
     "discount": {
@@ -26,7 +26,7 @@ PUT /product/_doc/_mapping
 ## Querying the `description` field
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "match": {
@@ -39,7 +39,7 @@ GET /product/_doc/_search
 ## Querying the `discount` field
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "term": {

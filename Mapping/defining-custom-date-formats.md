@@ -17,7 +17,7 @@ PUT /product/_doc/_mapping
 ## Date mapping with `strict_year` format
 
 ```
-PUT /product/_doc/_mapping
+PUT /product/_mapping
 {
   "properties": {
     "created": {
@@ -31,7 +31,7 @@ PUT /product/_doc/_mapping
 ## Date mapping with explicit default format
 
 ```
-PUT /product/_doc/_mapping
+PUT /product/_mapping
 {
   "properties": {
     "created": {
@@ -45,7 +45,7 @@ PUT /product/_doc/_mapping
 ## Date mapping with date and optional time
 
 ```
-PUT /product/_doc/_mapping
+PUT /product/_mapping
 {
   "properties": {
     "created": {
