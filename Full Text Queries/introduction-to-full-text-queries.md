@@ -7,11 +7,11 @@ cd /path/to/data/file/directory
 ```
 
 ```shell
-curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/recipe/_doc/_bulk?pretty' --data-binary "@test-data.json"
+curl -H "Content-Type: application/x-ndjson" -XPOST 'http://localhost:9200/recipe/_bulk?pretty' --data-binary "@test-data.json"
 ```
 
 ## Inspecting the mapping
 
 ```
-GET /recipe/_doc/_mapping
+GET /recipe/_mapping
 ```
