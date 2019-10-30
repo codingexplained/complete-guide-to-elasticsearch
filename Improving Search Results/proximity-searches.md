@@ -40,7 +40,7 @@ PUT /proximity/_doc/5
 ## Adding the `slop` parameter to a `match_phrase` query
 
 ```
-GET /proximity/_doc/_search
+GET /proximity/_search
 {
   "query": {
     "match_phrase": {
@@ -54,7 +54,7 @@ GET /proximity/_doc/_search
 ```
 
 ```
-GET /proximity/_doc/_search
+GET /proximity/_search
 {
   "query": {
     "match_phrase": {

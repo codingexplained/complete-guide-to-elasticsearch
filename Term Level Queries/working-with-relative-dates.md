@@ -3,7 +3,7 @@
 ## Subtracting one year from `2010/01/01`
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {
@@ -18,7 +18,7 @@ GET /product/_doc/_search
 ## Subtracting one year and one day from `2010/01/01`
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {
@@ -33,7 +33,7 @@ GET /product/_doc/_search
 ## Subtracting one year from `2010/01/01` and rounding by month
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {
@@ -48,7 +48,7 @@ GET /product/_doc/_search
 ## Rounding by month _before_ subtracting one year from `2010/01/01`
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {
@@ -63,7 +63,7 @@ GET /product/_doc/_search
 ## Rounding by month _before_ subtracting one year from the current date
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {
@@ -78,7 +78,7 @@ GET /product/_doc/_search
 ## Matching documents with a `created` field containing the current date or later
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "range": {

@@ -57,7 +57,7 @@ POST /stemming_test/_doc/1
 ## Matching the document with the base word (`work`)
 
 ```
-GET /stemming_test/_doc/_search
+GET /stemming_test/_search
 {
   "query": {
     "match": {
@@ -70,7 +70,7 @@ GET /stemming_test/_doc/_search
 ## The query is stemmed, so the document still matches
 
 ```
-GET /stemming_test/_doc/_search
+GET /stemming_test/_search
 {
   "query": {
     "match": {
@@ -83,7 +83,7 @@ GET /stemming_test/_doc/_search
 ## Synonyms and stemmed words are still highlighted
 
 ```
-GET /stemming_test/_doc/_search
+GET /stemming_test/_search
 {
   "query": {
     "match": {

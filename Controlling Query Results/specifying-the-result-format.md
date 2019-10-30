@@ -3,7 +3,7 @@
 ## Returning results as YAML
 
 ```
-GET /recipe/_doc/_search?format=yaml
+GET /recipe/_search?format=yaml
 {
     "query": {
       "match": { "title": "pasta" }
@@ -14,7 +14,7 @@ GET /recipe/_doc/_search?format=yaml
 ## Returning pretty JSON
 
 ```
-GET /recipe/_doc/_search?pretty
+GET /recipe/_search?pretty
 {
     "query": {
       "match": { "title": "pasta" }

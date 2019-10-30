@@ -3,7 +3,7 @@
 ## Matching all documents
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "match_all": {}

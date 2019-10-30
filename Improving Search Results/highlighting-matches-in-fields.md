@@ -12,7 +12,7 @@ POST /highlighting/_doc/1
 ## Highlighting matches within the `description` field
 
 ```
-GET /highlighting/_doc/_search
+GET /highlighting/_search
 {
   "_source": false,
   "query": {
@@ -29,7 +29,7 @@ GET /highlighting/_doc/_search
 ## Specifying a custom tag
 
 ```
-GET /highlighting/_doc/_search
+GET /highlighting/_search
 {
   "_source": false,
   "query": {

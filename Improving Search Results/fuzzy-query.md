@@ -1,7 +1,7 @@
 # `fuzzy` query
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "fuzzy": {
@@ -15,7 +15,7 @@ GET /product/_doc/_search
 ```
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "fuzzy": {

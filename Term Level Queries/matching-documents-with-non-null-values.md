@@ -1,7 +1,7 @@
 # Matching documents with non-null values
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "exists": {

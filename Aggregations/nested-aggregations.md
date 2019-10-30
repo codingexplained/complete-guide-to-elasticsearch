@@ -3,7 +3,7 @@
 ## Retrieving statistics for each status
 
 ```
-GET /order/_doc/_search
+GET /order/_search
 {
   "size": 0,
   "aggs": {
@@ -26,7 +26,7 @@ GET /order/_doc/_search
 ## Narrowing down the aggregation context
 
 ```
-GET /order/_doc/_search
+GET /order/_search
 {
   "size": 0,
   "query": {

@@ -3,7 +3,7 @@
 ## Standard `match` query
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/_search
 {
   "query": {
     "match": {
@@ -16,7 +16,7 @@ GET /recipe/_doc/_search
 ## Specifying a boolean operator
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/_search
 {
   "query": {
     "match": {
@@ -30,7 +30,7 @@ GET /recipe/_doc/_search
 ```
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/_search
 {
   "query": {
     "match": {
@@ -44,7 +44,7 @@ GET /recipe/_doc/_search
 ```
 
 ```
-GET /recipe/_doc/_search
+GET /recipe/_search
 {
   "query": {
     "match": {

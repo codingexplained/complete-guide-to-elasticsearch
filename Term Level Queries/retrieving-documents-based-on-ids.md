@@ -1,7 +1,7 @@
 # Retrieving documents based on IDs
 
 ```
-GET /product/_doc/_search
+GET /product/_search
 {
   "query": {
     "ids": {
