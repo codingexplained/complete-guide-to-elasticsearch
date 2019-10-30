@@ -87,15 +87,14 @@ PUT /stories/_doc/6
 ```
 GET /stories/_search
 {
-    "query": {
-        "terms": {
-            "user": {
-                "index": "users",
-                "type": "_doc",
-                "id": 1,
-                "path": "following"
-            }
-        }
+  "query": {
+    "terms": {
+      "user": {
+        "index": "users",
+        "id": 1,
+        "path": "following"
+      }
     }
+  }
 }
 ```
