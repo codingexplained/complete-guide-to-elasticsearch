@@ -6,43 +6,41 @@
 PUT /order
 {
   "mappings": {
-    "_doc": {
-      "properties": {
-        "purchased_at": {
-          "type": "date"
-        },
-        "lines": {
-          "type": "nested",
-          "properties": {
-            "product_id": {
-              "type": "integer"
-            },
-            "amount": {
-              "type": "double"
-            },
-            "quantity": {
-              "type": "short"
-            }
+    "properties": {
+      "purchased_at": {
+        "type": "date"
+      },
+      "lines": {
+        "type": "nested",
+        "properties": {
+          "product_id": {
+            "type": "integer"
+          },
+          "amount": {
+            "type": "double"
+          },
+          "quantity": {
+            "type": "short"
           }
-        },
-        "total_amount": {
-          "type": "double"
-        },
-        "status": {
-          "type": "keyword"
-        },
-        "sales_channel": {
-          "type": "keyword"
-        },
-        "salesman": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "text"
-            }
+        }
+      },
+      "total_amount": {
+        "type": "double"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "sales_channel": {
+        "type": "keyword"
+      },
+      "salesman": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "text"
           }
         }
       }
