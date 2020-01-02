@@ -84,7 +84,7 @@ GET /order/_search
         "missing": "N/A",
         "min_doc_count": 0,
         "order": {
-          "_term": "asc"
+          "_key": "asc"
         }
       }
     }
