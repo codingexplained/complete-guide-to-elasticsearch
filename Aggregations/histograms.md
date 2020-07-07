@@ -74,7 +74,7 @@ GET /order/_search
     "orders_over_time": {
       "date_histogram": {
         "field": "purchased_at",
-        "interval": "month"
+        "calendar_interval": "month"
       }
     }
   }
