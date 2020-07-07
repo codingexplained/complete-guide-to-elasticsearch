@@ -91,7 +91,7 @@ GET /stories/_search
     "terms": {
       "user": {
         "index": "users",
-        "id": 1,
+        "id": "1",
         "path": "following"
       }
     }
