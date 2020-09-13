@@ -10,3 +10,15 @@ GET /product/_doc/1/_explain
   }
 }
 ```
+# 8.0 syntax
+
+```
+GET /product/_explain/1
+{
+  "query": {
+    "term": {
+      "name": "lobster"
+    }
+  }
+}
+```
