@@ -3,7 +3,7 @@
 ## Matching documents with a `sold` field of less than `10`
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "range": {
@@ -18,7 +18,7 @@ GET /product/_search
 ## Matching documents with a `sold` field between `10` (inclusive) and `30` (exclusive)
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "range": {
@@ -34,7 +34,7 @@ GET /product/_search
 ## Matching documents containing the tag `Meat`
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "term": {
@@ -47,7 +47,7 @@ GET /product/_search
 ## Matching documents containing `Tomato` or `Paste` within the `name` field
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "terms": {
@@ -60,7 +60,7 @@ GET /product/_search
 ## Matching documents containing `past` followed by an optional character, for the `name` field
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "wildcard": {
@@ -73,7 +73,7 @@ GET /product/_search
 ## Matching documents containing a number within the `name` field
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "regexp": {

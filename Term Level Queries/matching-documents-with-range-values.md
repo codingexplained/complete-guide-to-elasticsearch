@@ -3,7 +3,7 @@
 ## Matching documents with an `in_stock` field of between `1` and `5`, both included
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "range": {
@@ -19,7 +19,7 @@ GET /product/_search
 ## Matching documents with a date range
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "range": {
@@ -35,7 +35,7 @@ GET /product/_search
 ## Matching documents with a date range and custom date format
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "range": {

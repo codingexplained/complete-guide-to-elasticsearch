@@ -3,7 +3,7 @@
 ## Adding an asterisk for any characters (zero or more)
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "wildcard": {
@@ -16,7 +16,7 @@ GET /product/_search
 ## Adding a question mark for any single character
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "wildcard": {
@@ -27,7 +27,7 @@ GET /product/_search
 ```
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "wildcard": {
