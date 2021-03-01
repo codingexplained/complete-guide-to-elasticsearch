@@ -3,7 +3,7 @@
 ## Matching documents containing a tag beginning with `Vege`
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "prefix": {
