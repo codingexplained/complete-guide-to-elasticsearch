@@ -1,8 +1,6 @@
 # Parent/child inner hits
 
 ## Including inner hits for the `has_child` query
-
-```
 GET /department/_search
 {
   "query": {
@@ -32,11 +30,8 @@ GET /department/_search
     }
   }
 }
-```
 
 ## Including inner hits for the `has_parent` query
-
-```
 GET /department/_search
 {
   "query": {
@@ -51,4 +46,3 @@ GET /department/_search
     }
   }
 }
-```

@@ -1,8 +1,6 @@
 # Source filtering
 
 ## Excluding the `_source` field altogether
-
-```
 GET /recipe/_search
 {
   "_source": false,
@@ -10,11 +8,8 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```
 
 ## Only returning the `created` field
-
-```
 GET /recipe/_search
 {
   "_source": "created",
@@ -22,11 +17,8 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```
 
 ## Only returning an object's key
-
-```
 GET /recipe/_search
 {
   "_source": "ingredients.name",
@@ -34,11 +26,8 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```
 
 ## Returning all of an object's keys
-
-```
 GET /recipe/_search
 {
   "_source": "ingredients.*",
@@ -46,11 +35,8 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```
 
 ## Returning the `ingredients` object with all keys, __and__ the `servings` field
-
-```
 GET /recipe/_search
 {
   "_source": [ "ingredients.*", "servings" ],
@@ -58,11 +44,9 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```
 
 ## Including all of the `ingredients` object's keys, except the `name` key
 
-```
 GET /recipe/_search
 {
   "_source": {
@@ -73,4 +57,3 @@ GET /recipe/_search
     "match": { "title": "pasta" }
   }
 }
-```

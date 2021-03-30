@@ -1,6 +1,4 @@
 # Mapping document relationships
-
-```
 PUT /department/_mapping
 {
   "properties": {
@@ -12,4 +10,4 @@ PUT /department/_mapping
     }
   }
 }
-```
+

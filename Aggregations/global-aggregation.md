@@ -2,7 +2,7 @@
 
 ## Break out of the aggregation context
 
-```
+
 GET /order/_search
 {
   "query": {
@@ -26,11 +26,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Adding aggregation without global context
 
-```
+
 GET /order/_search
 {
   "query": {
@@ -59,4 +59,3 @@ GET /order/_search
     }
   }
 }
-```

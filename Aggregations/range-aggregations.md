@@ -2,7 +2,7 @@
 
 ## `range` aggregation
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -26,11 +26,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## `date_range` aggregation
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -52,11 +52,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Specifying the date format
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -79,11 +79,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Enabling keys for the buckets
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -107,11 +107,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Defining the bucket keys
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -137,11 +137,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Adding a sub-aggregation
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -174,4 +174,3 @@ GET /order/_search
     }
   }
 }
-```

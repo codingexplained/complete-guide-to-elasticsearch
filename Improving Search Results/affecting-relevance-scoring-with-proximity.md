@@ -2,7 +2,7 @@
 
 ## A simple `match` query within a `bool` query
 
-```
+
 GET /proximity/_search
 {
   "query": {
@@ -19,11 +19,11 @@ GET /proximity/_search
     }
   }
 }
-```
+
 
 ## Boosting relevance based on proximity
 
-```
+
 GET /proximity/_search
 {
   "query": {
@@ -49,11 +49,11 @@ GET /proximity/_search
     }
   }
 }
-```
+
 
 ## Adding the `slop` parameter
 
-```
+
 GET /proximity/_search
 {
   "query": {
@@ -80,4 +80,3 @@ GET /proximity/_search
     }
   }
 }
-```

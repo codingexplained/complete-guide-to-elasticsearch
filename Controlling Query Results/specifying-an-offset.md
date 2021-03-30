@@ -1,8 +1,6 @@
 # Specifying an offset
 
 ## Specifying an offset with the `from` parameter
-
-```
 GET /recipe/_search
 {
   "_source": false,
@@ -14,4 +12,3 @@ GET /recipe/_search
     }
   }
 }
-```

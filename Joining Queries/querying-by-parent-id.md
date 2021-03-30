@@ -1,6 +1,4 @@
 # Querying by parent
-
-```
 GET /department/_search
 {
   "query": {
@@ -10,4 +8,3 @@ GET /department/_search
     }
   }
 }
-```

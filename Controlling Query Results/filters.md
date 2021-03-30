@@ -1,8 +1,6 @@
 # Filters
 
 ## Adding a `filter` clause to the `bool` query
-
-```
 GET /recipe/_search
 {
   "query": {
@@ -26,4 +24,3 @@ GET /recipe/_search
     }
   }
 }
-```

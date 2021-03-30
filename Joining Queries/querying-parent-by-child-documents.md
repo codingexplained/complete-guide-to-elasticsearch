@@ -1,8 +1,6 @@
 # Querying parent by child documents
 
 ## Finding parents with child documents matching a `bool` query
-
-```
 GET /department/_search
 {
   "query": {
@@ -31,11 +29,8 @@ GET /department/_search
     }
   }
 }
-```
 
 ## Taking relevance scores into account with `score_mode`
-
-```
 GET /department/_search
 {
   "query": {
@@ -65,11 +60,8 @@ GET /department/_search
     }
   }
 }
-```
 
 ## Specifying the minimum and maximum number of children
-
-```
 GET /department/_search
 {
   "query": {
@@ -101,4 +93,3 @@ GET /department/_search
     }
   }
 }
-```

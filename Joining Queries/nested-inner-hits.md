@@ -1,6 +1,4 @@
 # Nested inner hits
-
-```
 GET /department/_search
 {
   "_source": false,
@@ -29,4 +27,3 @@ GET /department/_search
     }
   }
 }
-```

@@ -2,7 +2,7 @@
 
 ## Creating a bucket for each `status` value
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -14,11 +14,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Including `20` terms instead of the default `10`
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -31,11 +31,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Aggregating documents with missing field (or `NULL`)
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -49,11 +49,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Changing the minimum document count for a bucket to be created
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -68,11 +68,11 @@ GET /order/_search
     }
   }
 }
-```
+
 
 ## Ordering the buckets
 
-```
+
 GET /order/_search
 {
   "size": 0,
@@ -90,4 +90,4 @@ GET /order/_search
     }
   }
 }
-```
+

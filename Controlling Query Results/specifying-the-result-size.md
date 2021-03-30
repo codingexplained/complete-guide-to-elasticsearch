@@ -1,8 +1,6 @@
 # Specifying the result size
 
 ## Using a query parameter
-
-```
 GET /recipe/_search?size=2
 {
   "_source": false,
@@ -12,11 +10,8 @@ GET /recipe/_search?size=2
     }
   }
 }
-```
 
 ## Using a parameter within the request body
-
-```
 GET /recipe/_search
 {
   "_source": false,
@@ -27,4 +22,3 @@ GET /recipe/_search
     }
   }
 }
-```

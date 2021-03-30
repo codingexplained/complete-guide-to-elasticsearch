@@ -2,7 +2,7 @@
 
 ## Creating a test index
 
-```
+
 PUT /stemming_test
 {
   "settings": {
@@ -41,20 +41,20 @@ PUT /stemming_test
     }
   }
 }
-```
+
 
 ## Adding a test document
 
-```
+
 PUT /stemming_test/_doc/1
 {
   "description": "I love working for my firm!"
 }
-```
+
 
 ## Matching the document with the base word (`work`)
 
-```
+
 GET /stemming_test/_search
 {
   "query": {
@@ -63,11 +63,11 @@ GET /stemming_test/_search
     }
   }
 }
-```
+
 
 ## The query is stemmed, so the document still matches
 
-```
+
 GET /stemming_test/_search
 {
   "query": {
@@ -76,11 +76,11 @@ GET /stemming_test/_search
     }
   }
 }
-```
+
 
 ## Synonyms and stemmed words are still highlighted
 
-```
+
 GET /stemming_test/_search
 {
   "query": {
@@ -94,4 +94,3 @@ GET /stemming_test/_search
     }
   }
 }
-```

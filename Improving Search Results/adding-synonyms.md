@@ -2,7 +2,7 @@
 
 ## Creating index with custom analyzer
 
-```
+
 PUT /synonyms
 {
   "settings": {
@@ -38,54 +38,54 @@ PUT /synonyms
     }
   }
 }
-```
+
 
 ## Testing the analyzer (with synonyms)
 
-```
+
 POST /synonyms/_analyze
 {
   "analyzer": "my_analyzer",
   "text": "awesome"
 }
-```
 
-```
+
+
 POST /synonyms/_analyze
 {
   "analyzer": "my_analyzer",
   "text": "Elasticsearch"
 }
-```
 
-```
+
+
 POST /synonyms/_analyze
 {
   "analyzer": "my_analyzer",
   "text": "weird"
 }
-```
 
-```
+
+
 POST /synonyms/_analyze
 {
   "analyzer": "my_analyzer",
   "text": "Elasticsearch is awesome, but can also seem weird sometimes."
 }
-```
+
 
 ## Adding a test document
 
-```
+
 POST /synonyms/_doc
 {
   "description": "Elasticsearch is awesome, but can also seem weird sometimes."
 }
-```
+
 
 ## Searching the index for synonyms
 
-```
+
 GET /synonyms/_search
 {
   "query": {
@@ -94,9 +94,9 @@ GET /synonyms/_search
     }
   }
 }
-```
 
-```
+
+
 GET /synonyms/_search
 {
   "query": {
@@ -105,4 +105,3 @@ GET /synonyms/_search
     }
   }
 }
-```

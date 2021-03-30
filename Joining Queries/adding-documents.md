@@ -1,26 +1,20 @@
 # Adding documents
 
 ## Adding departments
-
-```
 PUT /department/_doc/1
 {
   "name": "Development",
   "join_field": "department"
 }
-```
 
-```
+
 PUT /department/_doc/2
 {
   "name": "Marketing",
   "join_field": "department"
 }
-```
 
 ## Adding employees for departments
-
-```
 PUT /department/_doc/3?routing=1
 {
   "name": "Bo Andersen",
@@ -31,9 +25,7 @@ PUT /department/_doc/3?routing=1
     "parent": 1
   }
 }
-```
 
-```
 PUT /department/_doc/4?routing=2
 {
   "name": "John Doe",
@@ -44,9 +36,7 @@ PUT /department/_doc/4?routing=2
     "parent": 2
   }
 }
-```
 
-```
 PUT /department/_doc/5?routing=1
 {
   "name": "James Evans",
@@ -57,9 +47,7 @@ PUT /department/_doc/5?routing=1
     "parent": 1
   }
 }
-```
 
-```
 PUT /department/_doc/6?routing=1
 {
   "name": "Daniel Harris",
@@ -70,9 +58,7 @@ PUT /department/_doc/6?routing=1
     "parent": 1
   }
 }
-```
 
-```
 PUT /department/_doc/7?routing=2
 {
   "name": "Jane Park",
@@ -83,9 +69,7 @@ PUT /department/_doc/7?routing=2
     "parent": 2
   }
 }
-```
 
-```
 PUT /department/_doc/8?routing=1
 {
   "name": "Christina Parker",
@@ -96,4 +80,3 @@ PUT /department/_doc/8?routing=1
     "parent": 1
   }
 }
-```

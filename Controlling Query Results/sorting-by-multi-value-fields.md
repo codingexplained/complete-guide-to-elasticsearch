@@ -1,8 +1,6 @@
 # Sorting by multi-value fields
 
 ## Sorting by the average rating (descending)
-
-```
 GET /recipe/_search
 {
   "_source": "ratings",
@@ -18,4 +16,3 @@ GET /recipe/_search
     }
   ]
 }
-```

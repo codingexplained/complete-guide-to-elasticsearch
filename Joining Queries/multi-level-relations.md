@@ -1,8 +1,6 @@
 # Multi-level relations
 
 ## Creating the index with mapping
-
-```
 PUT /company
 {
   "mappings": {
@@ -17,21 +15,15 @@ PUT /company
     }
   }
 }
-```
 
 ## Adding a company
-
-```
 PUT /company/_doc/1
 {
   "name": "My Company Inc.",
   "join_field": "company"
 }
-```
 
 ## Adding a department
-
-```
 PUT /company/_doc/2?routing=1
 {
   "name": "Development",
@@ -40,11 +32,8 @@ PUT /company/_doc/2?routing=1
     "parent": 1
   }
 }
-```
 
 ## Adding an employee
-
-```
 PUT /company/_doc/3?routing=1
 {
   "name": "Bo Andersen",
@@ -53,18 +42,14 @@ PUT /company/_doc/3?routing=1
     "parent": 2
   }
 }
-```
 
 ## Adding some more test data
-```
 PUT /company/_doc/4
 {
   "name": "Another Company, Inc.",
   "join_field": "company"
 }
-```
 
-```
 PUT /company/_doc/5?routing=4
 {
   "name": "Marketing",
@@ -73,9 +58,7 @@ PUT /company/_doc/5?routing=4
     "parent": 4
   }
 }
-```
 
-```
 PUT /company/_doc/6?routing=4
 {
   "name": "John Doe",
@@ -84,11 +67,8 @@ PUT /company/_doc/6?routing=4
     "parent": 5
   }
 }
-```
 
 ## Example of querying multi-level relations
-
-```
 GET /company/_search
 {
   "query": {
@@ -107,4 +87,3 @@ GET /company/_search
     }
   }
 }
-```

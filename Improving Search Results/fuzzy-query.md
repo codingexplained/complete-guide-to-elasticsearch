@@ -1,6 +1,6 @@
 # `fuzzy` query
 
-```
+
 GET /product/_search
 {
   "query": {
@@ -12,9 +12,9 @@ GET /product/_search
     }
   }
 }
-```
 
-```
+
+
 GET /product/_search
 {
   "query": {
@@ -26,4 +26,3 @@ GET /product/_search
     }
   }
 }
-```

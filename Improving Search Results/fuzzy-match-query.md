@@ -2,7 +2,7 @@
 
 ## Searching with `fuzziness` set to `auto`
 
-```
+
 GET /product/_search
 {
   "query": {
@@ -14,9 +14,9 @@ GET /product/_search
     }
   }
 }
-```
 
-```
+
+
 GET /product/_search
 {
   "query": {
@@ -28,11 +28,11 @@ GET /product/_search
     }
   }
 }
-```
+
 
 ## Fuzziness is per term (and specifying an integer)
 
-```
+
 GET /product/_search
 {
   "query": {
@@ -45,11 +45,11 @@ GET /product/_search
     }
   }
 }
-```
+
 
 ## Switching letters around with transpositions
 
-```
+
 GET /product/_search
 {
   "query": {
@@ -61,11 +61,11 @@ GET /product/_search
     }
   }
 }
-```
+
 
 ## Disabling transpositions
 
-```
+
 GET /product/_search
 {
   "query": {
@@ -78,4 +78,3 @@ GET /product/_search
     }
   }
 }
-```

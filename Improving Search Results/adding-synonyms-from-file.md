@@ -2,7 +2,7 @@
 
 ## Adding index with custom analyzer
 
-```
+
 PUT /synonyms
 {
   "settings": {
@@ -33,25 +33,24 @@ PUT /synonyms
     }
   }
 }
-```
+
 
 ## Synonyms file (`config/analysis/synonyms.txt`)
 
-```
+
 # This is a comment
 
 awful => terrible
 awesome => great, super
 elasticsearch, logstash, kibana => elk
 weird, strange
-```
+
 
 ## Testing the analyzer
 
-```
+
 POST /synonyms/_analyze
 {
   "analyzer": "my_analyzer",
   "text": "Elasticsearch"
 }
-```

@@ -1,8 +1,6 @@
 # Querying child documents by parent
 
 ## Matching child documents by parent criteria
-
-```
 GET /department/_search
 {
   "query": {
@@ -16,11 +14,8 @@ GET /department/_search
     }
   }
 }
-```
 
 ## Incorporating the parent documents' relevance scores
-
-```
 GET /department/_search
 {
   "query": {
@@ -35,4 +30,3 @@ GET /department/_search
     }
   }
 }
-```
