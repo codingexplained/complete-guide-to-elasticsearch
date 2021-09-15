@@ -11,7 +11,7 @@
 {"index":{"_id":6}}
 {"name":"Nestea - Iced Tea","price":121,"in_stock":23,"sold":431,"tags":["Beverage"],"description":"Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.","is_active":true,"created":"2011\/11\/06"}
 {"index":{"_id":7}}
-{"name":"Beets - Pickled","price":172,"in_stock":25,"sold":290,"tags":["Vegetable", "Beets"],"description":"Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.","is_active":false,"created":"2008\/09\/20"}
+{"name":"Beets - Pickled","price":172,"in_stock":25,"sold":290,"tags":["Vegetable","Beets"],"description":"Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.","is_active":false,"created":"2008\/09\/20"}
 {"index":{"_id":8}}
 {"name":"Energy Drink Red Bull","price":153,"in_stock":25,"sold":6,"tags":["Beverage"],"description":"Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.","is_active":false,"created":"2017\/05\/17"}
 {"index":{"_id":9}}
@@ -63,7 +63,7 @@
 {"index":{"_id":32}}
 {"name":"Silicone Parch. 16.3x24.3","price":81,"in_stock":15,"sold":187,"tags":[],"description":"Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.","is_active":true,"created":"2017\/12\/12"}
 {"index":{"_id":33}}
-{"name":"Beets","price":56,"in_stock":15,"sold":234,"tags":["Vegetable", "Beets"],"description":"Suspendisse potenti.","is_active":true,"created":"2003\/08\/11"}
+{"name":"Beets","price":56,"in_stock":15,"sold":234,"tags":["Vegetable","Beets"],"description":"Suspendisse potenti.","is_active":true,"created":"2003\/08\/11"}
 {"index":{"_id":34}}
 {"name":"Kirsch - Schloss","price":130,"in_stock":30,"sold":235,"tags":[],"description":"Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.","is_active":false,"created":"2001\/02\/21"}
 {"index":{"_id":35}}
