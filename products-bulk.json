@@ -363,7 +363,7 @@
 {"index":{"_id":182}}
 {"name":"Beans - Yellow","price":45,"in_stock":37,"sold":233,"tags":["Vegetable"],"description":"Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.","is_active":true,"created":"2013\/07\/15"}
 {"index":{"_id":183}}
-{"name":"Beer - Heineken","price":11,"in_stock":29,"sold":348,"tags":["Alcohol","Beverage","Beer"],"description":"Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.","is_active":false,"created":"2004\/12\/10"}
+{"name":"Heineken","price":11,"in_stock":29,"sold":348,"tags":["Alcohol","Beverage","Beer"],"description":"Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.","is_active":false,"created":"2004\/12\/10"}
 {"index":{"_id":184}}
 {"name":"Taro Root","price":196,"in_stock":33,"sold":224,"tags":[],"description":"Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.","is_active":true,"created":"2009\/07\/13"}
 {"index":{"_id":185}}
