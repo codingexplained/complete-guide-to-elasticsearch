@@ -20,7 +20,7 @@ PUT /orders/_doc/1002
 ## Aggregating documents with missing field value
 
 ```
-GET /orders/_doc/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {
@@ -36,7 +36,7 @@ GET /orders/_doc/_search
 ## Combining `missing` aggregation with other aggregations
 
 ```
-GET /orders/_doc/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {
