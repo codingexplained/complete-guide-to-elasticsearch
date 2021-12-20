@@ -3,14 +3,14 @@
 ## Adding test documents
 
 ```
-POST /orders/_doc/1001
+PUT /orders/_doc/1001
 {
   "total_amount": 100
 }
 ```
 
 ```
-POST /orders/_doc/1002
+PUT /orders/_doc/1002
 {
   "total_amount": 200,
   "status": null
