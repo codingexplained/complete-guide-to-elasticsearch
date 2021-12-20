@@ -3,7 +3,7 @@
 ## Filtering out documents with low `total_amount`
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {
@@ -23,7 +23,7 @@ GET /order/_search
 ## Aggregating on the bucket of remaining documents
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {

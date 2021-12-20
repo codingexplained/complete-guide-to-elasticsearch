@@ -1,9 +1,9 @@
 # Introduction to aggregations
 
-## Adding `order` index and mappings
+## Adding `orders` index with field mappings
 
 ```
-PUT /order
+PUT /orders
 {
   "mappings": {
     "properties": {
@@ -49,8 +49,8 @@ PUT /order
 }
 ```
 
-## Populating the `order` index with test data
+## Populating the `orders` index with test data
 
 ```
-curl -H "Content-Type:application/x-ndjson" -XPOST 'http://localhost:9200/order/_bulk' --data-binary "@orders-bulk.json"
+curl -H "Content-Type:application/x-ndjson" -XPOST 'http://localhost:9200/orders/_bulk' --data-binary "@orders-bulk.json"
 ```

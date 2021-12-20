@@ -3,7 +3,7 @@
 ## Distribution of `total_amount` with interval `25`
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {
@@ -20,7 +20,7 @@ GET /order/_search
 ## Requiring minimum 1 document per bucket
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {
@@ -38,7 +38,7 @@ GET /order/_search
 ## Specifying fixed bucket boundaries
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "query": {
@@ -67,7 +67,7 @@ GET /order/_search
 ## Aggregating by month with the `date_histogram` aggregation
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "size": 0,
   "aggs": {

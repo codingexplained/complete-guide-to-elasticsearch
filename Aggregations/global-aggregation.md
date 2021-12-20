@@ -3,7 +3,7 @@
 ## Break out of the aggregation context
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "query": {
     "range": {
@@ -31,7 +31,7 @@ GET /order/_search
 ## Adding aggregation without global context
 
 ```
-GET /order/_search
+GET /orders/_search
 {
   "query": {
     "range": {
