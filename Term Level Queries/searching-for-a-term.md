@@ -3,7 +3,7 @@
 ## Matching documents with a value of `true` for the `is_active` field
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "term": {
@@ -14,7 +14,7 @@ GET /product/_search
 ```
 
 ```
-GET /product/_search
+GET /products/_search
 {
   "query": {
     "term": {
