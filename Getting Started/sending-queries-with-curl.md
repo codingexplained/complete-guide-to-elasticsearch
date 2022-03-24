@@ -3,9 +3,9 @@
 ## Handling self signed certificates
 
 Elasticsearch is protected with a self signed certificate by default, which HTTP clients do not trust. 
-Sending a request will therefore fail with a certificate. To fix this, we have a couple of options.
+Sending a request will therefore fail with a certificate error. To fix this, we have a couple of options.
 
-### Skip certificate verification
+### 1. Skip certificate verification
 
 One option is to entirely skip the verification of the certificate. This is not exactly best practice, 
 but if you are just developing with a local cluster, then it might be just fine. To ignore the 
@@ -16,12 +16,12 @@ curl --insecure [...]
 curl -k [...]
 ```
 
-### Providing the CA certificate
+### 2. Provide the CA certificate
 
 A better approach is to provide the CA certificate so that the TLS certificate is not just ignored. 
-The file can be supplied with the `--cacert` argument. The CA certificate is typically stored within 
+The path to the file can be supplied with the `--cacert` argument. The CA certificate is typically stored within 
 the `config/certs` directory, although the `certs` directory may be at the root of your Elasticsearch 
-home directory depending on how you installed Elasticsearch.
+home directory (`$ES_HOME`) depending on how you installed Elasticsearch.
 
 ```
 # macOS & Linux
@@ -33,7 +33,7 @@ cd C:\Path\To\Elasticsearch
 curl --cacert config\certs\http_ca.crt [...]
 ```
 
-Alternatively, you can use an absolute path to the file.
+Alternatively, you can specify the absolute path to the file.
 
 ## Authentication
 All requests made to Elasticsearch must be authenticated. For local deployments, use the password that 
@@ -44,17 +44,17 @@ curl -u elastic [...]
 ```
 
 The above will prompt you to enter the password when running the command. Alternatively, you can enter 
-the password directly within the command as follows.
+the password directly within the command as follows (without the brackets).
 
 ```
-curl -u elastic:[YOUR_PASSWORD] [...]
+curl -u elastic:[YOUR_PASSWORD_HERE] [...]
 ```
 
 Note that this exposes your password within the terminal, so this is not best practice from a security perspective.
 
 ## Adding a request body & `Content-Type` header
 
-To send data within the request, use the `-d` argument, e.g. for a `match_all` query. Note that using 
+To send data within the request, use the `-d` argument, e.g. for the `match_all` query. Note that using 
 single quotes does not work on Windows, so each double quote within the JSON object must be escaped.
 
 ```
