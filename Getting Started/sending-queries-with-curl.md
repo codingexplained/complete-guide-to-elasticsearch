@@ -1,18 +1,92 @@
 # Sending queries with cURL
 
-## Checking the cluster's health
+## Handling self signed certificates
+
+Elasticsearch is protected with a self signed certificate by default, which HTTP clients do not trust. 
+Sending a request will therefore fail with a certificate. To fix this, we have a couple of options.
+
+### Skip certificate verification
+
+One option is to entirely skip the verification of the certificate. This is not exactly best practice, 
+but if you are just developing with a local cluster, then it might be just fine. To ignore the 
+certificate, use either the `--insecure` flag or `-k`.
 
 ```
-GET /_cluster/health
+curl --insecure [...]
+curl -k [...]
 ```
 
-## Test search query
+### Providing the CA certificate
+
+A better approach is to provide the CA certificate so that the TLS certificate is not just ignored. 
+The file can be supplied with the `--cacert` argument. The CA certificate is typically stored within 
+the `config/certs` directory, although the `certs` directory may be at the root of your Elasticsearch 
+home directory depending on how you installed Elasticsearch.
 
 ```
-GET /.kibana/_search
-{
-  "query": {
-    "match_all": {}
-  }
-}
+# macOS & Linux
+cd /path/to/elasticsearch
+curl --cacert config/certs/http_ca.crt [...]
+
+# Windows
+cd C:\Path\To\Elasticsearch
+curl --cacert config\certs\http_ca.crt [...]
+```
+
+Alternatively, you can use an absolute path to the file.
+
+## Authentication
+All requests made to Elasticsearch must be authenticated. For local deployments, use the password that 
+was generated for the `elastic` user the first time Elasticsearch started up.
+
+```
+curl -u elastic [...]
+```
+
+The above will prompt you to enter the password when running the command. Alternatively, you can enter 
+the password directly within the command as follows.
+
+```
+curl -u elastic:[YOUR_PASSWORD] [...]
+```
+
+Note that this exposes your password within the terminal, so this is not best practice from a security perspective.
+
+## Adding a request body & `Content-Type` header
+
+To send data within the request, use the `-d` argument, e.g. for a `match_all` query. Note that using 
+single quotes does not work on Windows, so each double quote within the JSON object must be escaped.
+
+```
+# macOS & Linux
+curl [...] https://localhost:9200/products/_search -d '{ "query": { "match_all": {} } }'
+
+# Windows
+curl [...] https://localhost:9200/products/_search -d "{ \"query\": { \"match_all\": {} } }"
+```
+
+When sending data (typically JSON), we need to tell Elasticsearch which type of data we are sending. This 
+can be done with the `Content-Type` HTTP header. Simply add it with cURL's `-H` argument.
+
+```
+curl -H "Content-Type:application/json" [...]
+```
+
+## Specifying the HTTP verb
+
+You may also specify the HTTP verb (e.g. `POST`). This is necessary for some endpoints, such as when 
+indexing documents. `GET` is assumed by default.
+
+```
+curl -X POST [...]
+```
+
+## All together now
+
+```
+# macOS & Linux
+curl --cacert config/certs/http_ca.crt -u elastic https://localhost:9200/products/_search -d '{ "query": { "match_all": {} } }'
+
+# Windows
+curl --cacert config\certs\http_ca.crt -u elastic https://localhost:9200/products/_search -d "{ \"query\": { \"match_all\": {} } }"
 ```
