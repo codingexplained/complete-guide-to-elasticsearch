@@ -18,7 +18,7 @@ cd C:\Users\[your_username]\Desktop
 ## Importing data into local cluster
 
 ```
-curl -H "Content-Type:application/x-ndjson" -XPOST http://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
+curl --insecure -u elastic:[elasticsearch_password] -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
 ```
 
 ## Importing data into Elastic Cloud 
