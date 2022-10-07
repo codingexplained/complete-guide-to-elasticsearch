@@ -51,6 +51,12 @@ PUT /orders
 
 ## Populating the `orders` index with test data
 
+If you are using a cloud hosted Elasticsearch deployment, remove the `--cacert` argument.
+
 ```
-curl -H "Content-Type:application/x-ndjson" -XPOST 'http://localhost:9200/orders/_bulk' --data-binary "@orders-bulk.json"
+# macOS & Linux
+curl --cacert config/certs/http_ca.crt -u elastic -H "Content-Type:application/x-ndjson" -X POST https://localhost:9200/orders/_bulk --data-binary "@orders-bulk.json"
+
+# Windows
+curl --cacert config\certs\http_ca.crt -u elastic -H "Content-Type:application/x-ndjson" -X POST https://localhost:9200/orders/_bulk --data-binary "@orders-bulk.json"
 ```
