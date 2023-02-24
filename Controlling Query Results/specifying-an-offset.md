@@ -3,7 +3,7 @@
 ## Specifying an offset with the `from` parameter
 
 ```
-GET /recipe/_search
+GET /recipes/_search
 {
   "_source": false,
   "size": 2,

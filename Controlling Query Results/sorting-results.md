@@ -3,7 +3,7 @@
 ## Sorting by ascending order (implicitly)
 
 ```
-GET /recipe/_search
+GET /recipes/_search
 {
   "_source": false,
   "query": {
@@ -18,7 +18,7 @@ GET /recipe/_search
 ## Sorting by descending order
 
 ```
-GET /recipe/_search
+GET /recipes/_search
 {
   "_source": "created",
   "query": {
@@ -33,7 +33,7 @@ GET /recipe/_search
 ## Sorting by multiple fields
 
 ```
-GET /recipe/_search
+GET /recipes/_search
 {
   "_source": [ "preparation_time_minutes", "created" ],
   "query": {

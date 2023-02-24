@@ -1,6 +1,6 @@
-# Querying nested objects
+# Add departments test data
 
-## Creating the index with mapping
+## Create a new index
 
 ```
 PUT /department
@@ -18,7 +18,7 @@ PUT /department
 }
 ```
 
-## Adding test documents
+## Add two test documents
 
 ```
 PUT /department/_doc/1
@@ -125,36 +125,5 @@ PUT /department/_doc/2
       "position": "SEM Specialist"
     }
   ]
-}
-```
-
-## Querying nested fields
-
-```
-GET /department/_search
-{
-  "query": {
-    "nested": {
-      "path": "employees",
-      "query": {
-        "bool": {
-          "must": [
-            {
-              "match": {
-                "employees.position": "intern"
-              }
-            },
-            {
-              "term": {
-                "employees.gender.keyword": {
-                  "value": "F"
-                }
-              }
-            }
-          ]
-        }
-      }
-    }
-  }
 }
 ```
