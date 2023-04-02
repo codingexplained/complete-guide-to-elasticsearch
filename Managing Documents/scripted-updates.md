@@ -78,8 +78,9 @@ POST /products/_update/100
       if (ctx._source.in_stock < 0) {
         ctx.op = 'delete';
       }
-      
-      ctx._source.in_stock--;
+      else {
+        ctx._source.in_stock--;
+      }
     """
   }
 }
