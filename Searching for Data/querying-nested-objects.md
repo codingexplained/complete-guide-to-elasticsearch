@@ -2,7 +2,7 @@
 
 ## Importing test data
 
-Follow [these instructions](/codingexplained/complete-guide-to-elasticsearch/blob/master/Managing%20Documents/importing-data-with-curl.md) and specify `recipes-bulk.json` as the file name.
+Follow [these instructions](/Managing%20Documents/importing-data-with-curl.md) and specify `recipes-bulk.json` as the file name.
 
 ## Searching arrays of objects (the wrong way)
 
