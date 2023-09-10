@@ -15,13 +15,14 @@ cd ~/Desktop
 cd C:\Users\[your_username]\Desktop
 ```
 
-## Importing data into local cluster
+## Importing data into local clusters
 
 ```
-curl --cacert [path_to_CA_certificate] -u elastic -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
+# Without CA certificate validation. This is fine for development clusters, but don't do this in production!
+curl -k -u elastic -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
 
-# Skipping the verification of the certificate (only for local development)
-curl --insecure -u elastic -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
+# With CA certificate validation. The certificate is located at $ES_HOME/config/certs/http_ca.crt
+curl --cacert /path/to/http_ca.crt -u elastic -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
 ```
 
 ## Importing data into Elastic Cloud 
