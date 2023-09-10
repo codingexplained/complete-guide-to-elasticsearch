@@ -26,5 +26,5 @@ curl --insecure -u elastic -H "Content-Type:application/x-ndjson" -XPOST https:/
 
 ## Importing data into Elastic Cloud 
 ```
-curl -H "Content-Type:application/x-ndjson" -XPOST -u username:password https://elastic-cloud-endpoint.com:9243/products/_bulk --data-binary "@products-bulk.json"
+curl -H "Content-Type:application/x-ndjson" -XPOST -u username https://elastic-cloud-endpoint.com:9243/products/_bulk --data-binary "@products-bulk.json"
 ```
