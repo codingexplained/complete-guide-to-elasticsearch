@@ -9,8 +9,8 @@ GET /department/_search
     "has_parent": {
       "parent_type": "department",
       "query": {
-        "term": {
-          "name.keyword": "Development"
+        "match": {
+          "name": "Development"
         }
       }
     }
@@ -28,8 +28,8 @@ GET /department/_search
       "parent_type": "department",
       "score": true,
       "query": {
-        "term": {
-          "name.keyword": "Development"
+        "match": {
+          "name": "Development"
         }
       }
     }
