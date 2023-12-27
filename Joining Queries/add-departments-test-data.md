@@ -8,7 +8,12 @@ PUT /department
   "mappings": {  
     "properties": {
       "name": {
-        "type": "text"
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
       },
       "employees": {
         "type": "nested"
