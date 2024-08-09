@@ -26,6 +26,9 @@ curl --cacert /path/to/http_ca.crt -u elastic -H "Content-Type:application/x-ndj
 ```
 
 ## Importing data into Elastic Cloud 
-```
-curl -H "Content-Type:application/x-ndjson" -XPOST -u username https://elastic-cloud-endpoint.com:9243/products/_bulk --data-binary "@products-bulk.json"
+
+First, create an API key within Kibana (Stack Management > Security > API keys). Replace `API_TOKEN` below with the base64 encoded API key.
+
+```bash
+curl -H "Content-Type:application/x-ndjson" -H "Authorization:ApiKey API_TOKEN" -XPOST https://elastic-cloud-endpoint.com/products/_bulk --data-binary "@products-bulk.json"
 ```

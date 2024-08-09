@@ -2,8 +2,9 @@
 
 ## Handling self signed certificates
 
-Elasticsearch is protected with a self signed certificate by default, which HTTP clients do not trust. 
-Sending a request will therefore fail with a certificate error. To fix this, we have a couple of options.
+Local deployments of Elasticsearch are protected with a self signed certificate by default, which HTTP clients do not trust. 
+Sending a request will therefore fail with a certificate error. To fix this, we have a couple of options. 
+For cloud deployments, simply skip this step.
 
 ### 1. Skip certificate verification
 
@@ -36,8 +37,10 @@ curl --cacert config\certs\http_ca.crt [...]
 Alternatively, you can specify the absolute path to the file.
 
 ## Authentication
-All requests made to Elasticsearch must be authenticated. For local deployments, use the password that 
-was generated for the `elastic` user the first time Elasticsearch started up.
+All requests made to Elasticsearch must be authenticated by default.
+
+### Local deployments
+For local deployments, use the password that was generated for the `elastic` user the first time Elasticsearch started up.
 
 ```
 curl -u elastic [...]
@@ -51,6 +54,14 @@ curl -u elastic:[YOUR_PASSWORD_HERE] [...]
 ```
 
 Note that this exposes your password within the terminal, so this is not best practice from a security perspective.
+
+### Elastic Cloud
+With Elastic Cloud, we should add an `Authorization` header to our requests and include an API key. API keys can be 
+created within Kibana (Stack Management > Security > API keys). Replace `API_TOKEN` below with the base64 encoded API key.
+
+```bash
+curl -H "Authorization:ApiKey API_TOKEN" [...]
+```
 
 ## Adding a request body & `Content-Type` header
 
